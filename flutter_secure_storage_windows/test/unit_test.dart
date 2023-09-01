@@ -812,7 +812,6 @@ void main() {
               if (onInit) {
                 return null;
               }
-              break;
           }
           fail('Unexpected method call: ${call.method}');
         });
@@ -994,7 +993,6 @@ void main() {
               if (onInit) {
                 return null;
               }
-              break;
           }
           fail('Unexpected method call: ${call.method}');
         });
