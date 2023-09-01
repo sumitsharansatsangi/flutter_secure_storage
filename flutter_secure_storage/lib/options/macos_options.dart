@@ -3,16 +3,11 @@ part of '../flutter_secure_storage.dart';
 /// Specific options for macOS platform.
 class MacOsOptions extends AppleOptions {
   const MacOsOptions({
-    String? groupId,
-    String? accountName = AppleOptions.defaultAccountName,
-    KeychainAccessibility accessibility = KeychainAccessibility.unlocked,
-    bool synchronizable = false,
-  }) : super(
-          groupId: groupId,
-          accountName: accountName,
-          accessibility: accessibility,
-          synchronizable: synchronizable,
-        );
+    super.groupId,
+    super.accountName,
+    super.accessibility,
+    super.synchronizable,
+  });
 
   static const MacOsOptions defaultOptions = MacOsOptions();
 
