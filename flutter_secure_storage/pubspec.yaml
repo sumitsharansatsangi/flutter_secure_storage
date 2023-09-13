@@ -5,8 +5,8 @@ publish_to: none
 repository: https://github.com/mogol/flutter_secure_storage/tree/develop/flutter_secure_storage
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.7.0"
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
 
 flutter:
   plugin:
@@ -33,15 +33,15 @@ dependencies:
   # validation, so we set a ^ constraint.
   # https://github.com/flutter/flutter/issues/46264
   flutter_secure_storage_linux:
-    path: ../flutter_secure_storage_linux
+    git: https://github.com/kumsumit/flutter_secure_storage_linux.git
   flutter_secure_storage_macos:
-    path: ../flutter_secure_storage_macos
+    git: https://github.com/kumsumit/flutter_secure_storage_macos.git
   flutter_secure_storage_platform_interface:
-    path: ../flutter_secure_storage_platform_interface
+    git: https://github.com/kumsumit/flutter_secure_storage_platform_interface.git
   flutter_secure_storage_web:
-    path: ../flutter_secure_storage_web
+    git: https://github.com/kumsumit/flutter_secure_storage_web.git
   flutter_secure_storage_windows:
-    path: ../flutter_secure_storage_windows
+    git: https://github.com/kumsumit/flutter_secure_storage_windows.git
   meta: ^1.9.1
 
 dev_dependencies:
