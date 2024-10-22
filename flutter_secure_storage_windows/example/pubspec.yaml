@@ -14,10 +14,11 @@ dependencies:
   flutter_secure_storage_windows:
     path: ../
   path: ^1.8.3
-  path_provider: ^2.1.1
+  path_provider:
+    git: https://github.com/kumsumit/path_provider.git
 
 dev_dependencies:
-  flutter_lints: ^2.0.2
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
   integration_test:
