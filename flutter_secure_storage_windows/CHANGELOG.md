@@ -1,3 +1,17 @@
+## 4.0.0
+- This plugin requires a minimum dart sdk of 3.3.0 or higher and a minimum flutter version of 3.19.0.
+- Migrated to new analyzer and clean-up code.
+- Migrates to `win32` version 5.5.4 to support Dart 3.4 / Flutter 3.22.0.
+
+## 3.1.2
+Reverts onCupertinoProtectedDataAvailabilityChanged and isCupertinoProtectedDataAvailable.
+
+## 3.1.1
+Updated flutter_secure_storage_platform_interface to latest version.
+
+## 3.1.0
+Fixed CompanyName and CompanyProduct on Windows are ignored when the lang-charset in the Runner.rc file is not 040904e4
+
 ## 3.0.0
 - Migrated to win32 package replacing C.
 - Changed PathNotFoundException to FileSystemException to be backwards compatible with Flutter SDK 2.12.0

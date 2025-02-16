@@ -1,0 +1,34 @@
+name: flutter_secure_storage_macos
+description: macOS implementation of flutter_secure_storage
+repository: https://github.com/mogol/flutter_secure_storage
+<<<<<<< HEAD:flutter_secure_storage_macos/pubspec.yaml
+publish_to: none
+version: 3.0.1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
+=======
+version: 4.0.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+>>>>>>> refs/remotes/origin/develop:archived_packages/flutter_secure_storage_macos/pubspec.yaml
+
+dependencies:
+  flutter:
+    sdk: flutter
+<<<<<<< HEAD:flutter_secure_storage_macos/pubspec.yaml
+  flutter_secure_storage_platform_interface:
+    git: https://github.com/kumsumit/flutter_secure_storage_platform_interface.git
+=======
+  flutter_secure_storage_platform_interface: ^2.0.0
+>>>>>>> refs/remotes/origin/develop:archived_packages/flutter_secure_storage_macos/pubspec.yaml
+
+flutter:
+  plugin:
+    implements: flutter_secure_storage
+    platforms:
+      macos:
+        pluginClass: FlutterSecureStoragePlugin

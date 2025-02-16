@@ -23,9 +23,11 @@ void main() {
       directory
           .listSync(followLinks: false)
           .whereType<File>()
-          .where((f) =>
-              path.basename(f.path) == encryptedJsonFileName ||
-              f.path.endsWith('.secure'),)
+          .where(
+            (f) =>
+                path.basename(f.path) == encryptedJsonFileName ||
+                f.path.endsWith('.secure'),
+          )
           .forEach((f) => f.deleteSync());
     }
   }
@@ -152,7 +154,8 @@ void main() {
     test(
       'write - new',
       () => withFfi(() async {
-        // Just checking file was created. Its contents should be tested via "read" test.
+        // Just checking file was created. Its contents should be tested via
+        // "read" test.
 
         final target = createTarget();
         final options = createOptions();
@@ -738,7 +741,8 @@ void main() {
           switch (call.method) {
             case 'containsKey':
               containsKeyCalled++;
-              return deleteCalled > 0 && (call.arguments as Map<String, dynamic>)['key'] == key;
+              return deleteCalled > 0 &&
+                  (call.arguments as Map<String, dynamic>)['key'] == key;
             case 'delete':
               deleteCalled++;
               return null;
@@ -1010,7 +1014,7 @@ void main() {
       'constructor',
       () async {
         expect(
-          () => stub.FlutterSecureStorageWindows(),
+          stub.FlutterSecureStorageWindows.new,
           throwsAssertionError,
         );
       },

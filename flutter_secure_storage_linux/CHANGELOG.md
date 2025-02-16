@@ -1,3 +1,17 @@
+## 2.0.1
+Adds application ID to cmake file
+
+## 2.0.0
+- This plugin requires a minimum dart sdk of 3.3.0 or higher and a minimum flutter version of 3.19.0.
+- Updated documentation
+
+## 1.2.2
+- Fix json.dump with indentations 
+
+## 1.2.1
+- Fixed search with schemas fails in cold keyrings
+- Fixed erase called on null
+
 ## 1.2.0
 - Remove and replace libjsoncpp1 dependency
 - Update Dart SDK Constraint to support <4.0.0 instead of <3.0.0.
